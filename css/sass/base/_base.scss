@@ -246,17 +246,8 @@ a {
 .breadcrumb-sec {
   position: relative;
   @include flexCenter;
-  padding: 40px 0;
+  padding: 20px 0;
 }
-// .page-head {
-//   font-size: 24px;
-//   color: $white;
-//   font-weight: 700;
-//   margin-bottom: 15px;
-//   padding: 0;
-//   text-transform: capitalize;
-//   text-align: center;
-// }
 ul.breadcrumb {
   background-color: transparent;
   border: none;
@@ -273,30 +264,27 @@ ul.breadcrumb li span,
 ul.breadcrumb li {
   @include tr;
   text-transform: capitalize;
-  font-size: 14px;
-  color: #808080;
-  font-weight: 400;
+  font-size: 16px;
+  color: $hover;
+  font-weight: 500;
   text-decoration: none !important;
 }
 ul.breadcrumb li span {
-  color: $black;
+  color: $hover;
   &::after {
     display: none;
   }
 }
 ul.breadcrumb li a:hover {
-  color: $hover;
+  color: $main;
 }
 .breadcrumb li ~ li::before {
   content: "/";
   padding: 0 5px;
-  font-size: 14px;
+  font-size: 16px;
 }
 @media (max-width: 991px) {
   .breadcrumb-sec {
     padding: 30px 0;
   }
-  // .breadcrumb-sec .page-head {
-  //   color: $main;
-  // }
 }

@@ -129,6 +129,11 @@
     opacity: 1;
   }
 }
+.booking-card {
+  .swiper-pagination {
+    bottom: 8px;
+  }
+}
 /*                          main-slider                             */
 .category-section {
   position: relative;
@@ -349,7 +354,7 @@
     font-size: 17px;
   }
 }
-.custon-ancor {
+.custom-ancor {
   width: 170px;
   height: 40px;
   border-radius: 12px;
@@ -360,6 +365,10 @@
   font-size: 16px;
   color: $white;
   @include flexCenter;
+  gap: 8px;
+  i {
+    font-size: 18px;
+  }
   @include tr;
   margin: 0 auto;
   &:hover {

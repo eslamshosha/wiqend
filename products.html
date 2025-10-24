@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>wiqend</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- header section -->
+    <header>
+      <div class="container">
+        <div class="top-header">
+          <div class="nav-header">
+            <button class="menu-bars" id="menu-id">
+              <i class="fas fa-bars"></i>
+            </button>
+            <figure class="img-logo">
+              <a href="index.html"
+                ><img src="images/logo.png" class="img-fluid" alt="logo" />
+              </a>
+            </figure>
+            <div class="navgition">
+              <div class="nav-head">
+                <button class="close-menu">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <ul class="big-menu list-unstyled">
+                <li>
+                  <a href="#"> home </a>
+                </li>
+                <li>
+                  <a href="#"> test</a>
+                </li>
+                <li>
+                  <a href="#"> test</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-icons">
+              <a href="#" class="lang-ancor"> ع</a>
+              <div class="dropdown cat-anchor">
+                <div class="add-to">
+                  <div class="user-cont">
+                    <i class="fa-solid fa-circle-user"></i>
+                  </div>
+                  <div class="dropdown-content">
+                    <a class="cat-drop" href="#">تسجيل الدخول</a>
+                    <a class="cat-drop" href="#">حساب جديد</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section     -->
+    <!-- breadcrumb section -->
+    <section class="breadcrumb-sec">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li class="item-home">
+            <a class="bread-link bread-home aFixx" href="index.html"
+              >home
+            </a>
+          </li>
+          <li class="active item-23">
+            <span class="bread-current"> Chalets</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- breadcrumb section -->
+    <!-- content section  -->
+    <section class="content-section">
+      <div class="container">
+        <div class="filter-grid">
+          <div class="filter-cont">
+            <span class="filters-mobile-btn">
+              <i class="fas fa-filter"></i>
+            </span>
+            <div class="filter-panel">
+              <h2 class="filter-title">Filter View</h2>
+              <div class="collapse-item">
+                <button
+                  class="btn-filter collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSort"
+                  aria-expanded="false"
+                  aria-controls="collapseSort"
+                >
+                  <span>Sort</span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </button>
+                <div class="collapse" id="collapseSort">
+                  <div class="card card-body">
+                    <div class="form-group">
+                      <div class="check-group">
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="">
+                              <input type="checkbox" name="sort" />
+                              <span class="checkmark custom-checkmark"></span>
+                              <span class="check-text">sort 1</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="check-group">
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="">
+                              <input type="checkbox" name="sort" />
+                              <span class="checkmark custom-checkmark"></span>
+                              <span class="check-text">sort 2</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse-item">
+                <button
+                  class="btn-filter"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRegion"
+                  aria-expanded="true"
+                  aria-controls="collapseRegion"
+                >
+                  <span>All Regions</span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </button>
+                <div class="collapse show" id="collapseRegion">
+                  <div class="card card-body">
+                    <div class="form-group">
+                      <div class="check-group">
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="">
+                              <input type="radio" name="filter" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">Region 1</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="check-group">
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="">
+                              <input type="radio" name="filter" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">Region 2</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="check-group">
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="">
+                              <input type="radio" name="filter" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">Region 3</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="check-group">
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="">
+                              <input type="radio" name="filter" />
+                              <span class="checkmark"></span>
+                              <span class="check-text">Region 4</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse-item">
+                <button
+                  class="btn-filter collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseCat"
+                  aria-expanded="false"
+                  aria-controls="collapseCat"
+                >
+                  <span>Area</span>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </button>
+                <div class="collapse" id="collapseCat">
+                  <div class="card card-body">
+                    <div class="form-group">
+                      <div class="check-group">
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="">
+                              <input type="checkbox" name="Area" />
+                              <span class="checkmark custom-checkmark"></span>
+                              <span class="check-text">Area 1</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="check-group">
+                        <div class="check-width">
+                          <label class="check-label">
+                            <span class="">
+                              <input type="checkbox" name="Area" />
+                              <span class="checkmark custom-checkmark"></span>
+                              <span class="check-text">Area 2</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-price">
+                <h2 class="price-head">Price</h2>
+                <div class="range-silder">
+                  <div id="slider-range"></div>
+                  <div id="min"></div>
+                  <div id="max"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="items-grid">
+            <a href="#" class="booking-card">
+              <div class="booking-img">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <figure>
+                        <img src="images/booking.jpg" alt="img" />
+                      </figure>
+                    </div>
+                    <div class="swiper-slide">
+                      <figure>
+                        <img src="images/booking.jpg" alt="img" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="booking-btns">
+                  <button class="fav-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="detail-flex">
+                  <div class="category-name">Chalets</div>
+                  <div class="detail-info-item">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4 <span>( 113 reviews )</span></span>
+                  </div>
+                </div>
+                <div class="item-price">
+                  Start From
+                  <span class="price">30.000</span>
+                  KWD/Night
+                </div>
+                <div class="card-item-name">Studio with a Side Seating</div>
+                <div class="card-place">
+                  <i class="fa-solid fa-location-dot"></i>Hawalli
+                </div>
+                <div class="card-option">
+                  <span><i class="fa-solid fa-expand"></i>87 M</span>
+                  <span><i class="fa-solid fa-bath"></i>1</span>
+                  <span><i class="fa-solid fa-car-side"></i>1</span>
+                  <span><i class="fa-solid fa-loveseat"></i>1</span>
+                  <span><i class="fa-solid fa-wifi"></i></span>
+                  <span><i class="fa-solid fa-family"></i></span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="booking-card">
+              <div class="booking-img">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <figure>
+                        <img src="images/booking.jpg" alt="img" />
+                      </figure>
+                    </div>
+                    <div class="swiper-slide">
+                      <figure>
+                        <img src="images/booking.jpg" alt="img" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="booking-btns">
+                  <button class="fav-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="detail-flex">
+                  <div class="category-name">Chalets</div>
+                  <div class="detail-info-item">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4 <span>( 113 reviews )</span></span>
+                  </div>
+                </div>
+                <div class="item-price">
+                  Start From
+                  <span class="price">30.000</span>
+                  KWD/Night
+                </div>
+                <div class="card-item-name">Studio with a Side Seating</div>
+                <div class="card-place">
+                  <i class="fa-solid fa-location-dot"></i>Hawalli
+                </div>
+                <div class="card-option">
+                  <span><i class="fa-solid fa-expand"></i>87 M</span>
+                  <span><i class="fa-solid fa-bath"></i>1</span>
+                  <span><i class="fa-solid fa-car-side"></i>1</span>
+                  <span><i class="fa-solid fa-loveseat"></i>1</span>
+                  <span><i class="fa-solid fa-wifi"></i></span>
+                  <span><i class="fa-solid fa-family"></i></span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="booking-card">
+              <div class="booking-img">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <figure>
+                        <img src="images/booking.jpg" alt="img" />
+                      </figure>
+                    </div>
+                    <div class="swiper-slide">
+                      <figure>
+                        <img src="images/booking.jpg" alt="img" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="booking-btns">
+                  <button class="fav-btn">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="detail-flex">
+                  <div class="category-name">Chalets</div>
+                  <div class="detail-info-item">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4 <span>( 113 reviews )</span></span>
+                  </div>
+                </div>
+                <div class="item-price">
+                  Start From
+                  <span class="price">30.000</span>
+                  KWD/Night
+                </div>
+                <div class="card-item-name">Studio with a Side Seating</div>
+                <div class="card-place">
+                  <i class="fa-solid fa-location-dot"></i>Hawalli
+                </div>
+                <div class="card-option">
+                  <span><i class="fa-solid fa-expand"></i>87 M</span>
+                  <span><i class="fa-solid fa-bath"></i>1</span>
+                  <span><i class="fa-solid fa-car-side"></i>1</span>
+                  <span><i class="fa-solid fa-loveseat"></i>1</span>
+                  <span><i class="fa-solid fa-wifi"></i></span>
+                  <span><i class="fa-solid fa-family"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="#" class="custom-ancor">
+          <i class="fa-light fa-map-location-dot"></i> show map</a
+        >
+      </div>
+    </section>
+    <!-- content section -->
+    <!-- footer section -->
+    <footer>
+      <div class="container">
+        <div class="footer-cont">
+          <figure class="footer-logo">
+            <a href="#"><img src="images/logo.png" class="img-fluid" /></a>
+          </figure>
+          <ul class="nav-footer">
+            <li>
+              <a href="#">Chalets</a>
+            </li>
+            <li>
+              <a href="#">Farms</a>
+            </li>
+            <li>
+              <a href="#">Jawakher</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <li>
+              <a href="#">Privacy policy</a>
+            </li>
+            <li>
+              <a href="#">Terms&conditions</a>
+            </li>
+            <li>
+              <a href="#">Terms of use</a>
+            </li>
+            <li>
+              <a href="#">FAQS</a>
+            </li>
+          </ul>
+          <div class="social">
+            <a href="#" class="social-link">
+              <img src="images/twitter.svg" alt="social" />
+            </a>
+            <a href="#" class="social-link">
+              <img src="images/instagram_logo.svg" alt="social" />
+            </a>
+            <a href="#" class="social-link">
+              <img src="images/tiktok.svg" alt="social" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section -->
+    <!-- arrow to top -->
+    <button class="arrow-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <!-- arrow to top -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      if (window.innerWidth < 992) {
+        // Collaped all panel in small device
+        $(".panel-heading").click(function (e) {
+          e.stopPropagation();
+        });
+        $(".filters-mobile-btn").click(function (e) {
+          $(".filter-cont").toggleClass("active");
+        });
+      }
+      $(function () {
+        $("#slider-range").slider({
+          range: true,
+          min: 0,
+          max: 1000,
+          step: 10,
+          values: [0, 1000],
+          slide: function (event, ui) {
+            var delay = function () {
+              //var handleIndex = $(ui.handle).data('index.uiSliderHandle');
+              var handleIndex = $(ui.handle).index();
+              var label = handleIndex == 1 ? "#min" : "#max";
+              $(label)
+                .html(ui.value + "$")
+                .position({
+                  my: "center top",
+                  at: "center bottom",
+                  of: ui.handle,
+                  offset: "0, 10",
+                });
+            };
+
+            // wait for the ui.handle to set its position
+            setTimeout(delay, 5);
+          },
+        });
+
+        $("#min")
+          .html($("#slider-range").slider("values", 0) + "$")
+          .position({
+            my: "center top",
+            at: "center bottom",
+            of: $("#slider-range span:eq(0)"),
+            offset: "0, 10",
+          });
+
+        $("#max")
+          .html($("#slider-range").slider("values", 1) + "$")
+          .position({
+            my: "center top",
+            at: "center bottom",
+            of: $("#slider-range span:eq(1)"),
+            offset: "0, 10",
+          });
+      });
+    </script>
+  </body>
+</html>
