@@ -61,7 +61,7 @@ $(document).ready(function () {
       : $(".arrow-top").fadeOut(300);
   });
 
-  var slider2 = new Swiper(".booking-card .swiper", {
+  var slider2 = new Swiper(".booking-img .swiper", {
     loop: true,
     autoplay: true,
     preloadImages: false,

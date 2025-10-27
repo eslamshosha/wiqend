@@ -288,3 +288,12 @@ ul.breadcrumb li a:hover {
     padding: 30px 0;
   }
 }
+.help-center{
+  font-weight: 400;
+  font-size: 24px;
+  color: $hover;
+  text-align: start;
+  @include max-991{
+    font-size: 16px;
+  }
+}
